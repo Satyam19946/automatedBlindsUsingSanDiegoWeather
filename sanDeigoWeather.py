@@ -5,7 +5,8 @@ def moveBlinds():
     print( "The code to move blind here")
 
 previousState = 0
-api_address = 'http://api.openweathermap.org/data/2.5/weather?q=San%20Diego&appid=bc476c86b88fb88f92439f882fd2504f'
+#Add your own app id (after the appid=) , you need to make an account on api.openweathermap.org (It is free to do so)
+api_address = 'http://api.openweathermap.org/data/2.5/weather?q=San%20Diego&appid='
 data = requests.get(api_address)
 weather_dict = data.json()
 
